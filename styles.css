@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 85%, rgba(244,244,244,1) 100%);
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0.5rem;
+    height: 5%;
+    background-color: rgba(201, 200, 216, 0.408);
+    border-radius: 0 0 10px 10px;
+}
+
+.logo {
+    margin-left: 2.5%;
+}
+
+.logo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.navbar{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 960px) {
+    .navbar {
+        flex-grow: 0.35;
+    }
+    .navbar li a {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    ul.navbar {
+        width: 100%;
+        padding-left: 0;
+        justify-content: space-around;
+    }
+}
+
+/* About Section */
+
+#about {
+    margin: 5% 2% 5% 2%;
+}
+.container.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.club {
+    padding-left: 2%;
+    width: 50%;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.club h3, .club p {
+    width: 55%;
+    
+}
+
+.club h3 {
+    font-size: 1.4rem;
+}
+
+.club p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.4;
+    font-size: 1.3rem;
+}
+
+.about img {
+    border-radius: 10px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 960px) {
+    .about img {
+        display: none;
+    }
+    .club {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .club h3, .club p {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .club p {
+        width: 70%;
+    }
+}
+
+/* Events Section */
+
+#events {
+    margin: 5% 2% 0% 2%;
+}
+
+.container-events {
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.events {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event {
+    width: 20%;
+}
+
+.event img {
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .events {
+        flex-wrap: wrap;
+    }
+
+    .event {
+        width: 49%;
+        height: 350px;
+    }
+}
+
+/* Locations Section */
+ #locations {
+    padding: 0 2% 5% 2%;
+ }
+
+.container-locations {
+    text-align: center;
+    width: 100%;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-between;
+}
+
+.city {
+    width: 30%;
+}
+
+.city img {
+    width: 100%;
+    height: 70%;
+}
+
+.city h3 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #locations {
+        padding-bottom: 0;
+    }
+
+    .cities {
+        display: block;
+    }
+
+    .city {
+        width: 100%;
+    }
+}
+
+/* Contacts Section */
+
+footer {
+    width: 100%;
+}
+
+.contacts {
+    width: 100%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contacts p {
+    font-size: 1.5rem;
+}
+
+
+.copy {
+    float: right;
+    margin-right: 15px;
+    color: black;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contacts p {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .copy {
+        font-size: 0.75rem;
+    }
+}
